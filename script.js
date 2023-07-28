@@ -11,8 +11,8 @@ navigator.geolocation.getCurrentPosition(function (pos) {
   const lat = pos.coords.latitude;
   const lng = pos.coords.longitude;
 
-  marker.setLatLng([lat, lng]).update();
-  map.setView([lat, lng], 13);
+  marker.setLatLng([lat, lng]);
+  map.setView([lat, lng], 15);
 
-  marker.bindPopup('<strong>Hello World</strong> <br> This is my location');
+  marker.bindPopup('<strong>Hello 🖐🏻<br>This is my location 🏡</strong>');
 });
